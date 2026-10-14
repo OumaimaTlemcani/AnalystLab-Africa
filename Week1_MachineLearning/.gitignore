@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Large data files (store in cloud / shared drive)
+data/raw/*.csv
+data/raw/*.xlsx
+data/master_dataset.csv
+data/train.csv
+data/test.csv
+
+# Trained model artifacts (reproducible via training scripts)
+models/*.pkl
+
+# Generated reports & figures (reproducible via notebook)
+reports/ML_Report.pdf
+reports/figures/*.png
+
+# IDE & editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter & IPython
+*.ipynb_checkpoints
+
+# Logs & temp files
+*.log
+*.tmp
+scratch/
