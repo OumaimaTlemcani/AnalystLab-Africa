@@ -1,0 +1,438 @@
+=== PAGE 1 ===
+ANALYSTLAB AFRICA
+Experience Lab Internship Programme
+Official Weekly Assignment
+Week 3: Hospital Operations, Cost & Patient Flow Intelligence
+Document Control
+Programme AnalystLab Africa Experience Lab
+Week Week 3
+Project Healthcare Analytics and AI Implementation
+Project Title Hospital Operations, Cost & Patient Flow
+Intelligence
+Version 1.0
+Issue Date ____________
+Submission Deadline End of Week 3 (Wednesday, 11:59 PM WAT)
+Submission Method Official AnalystLab Africa Week 3 Submission
+Form
+1. Project Background
+Client Scenario
+A healthcare organisation wants to improve its understanding of hospital operations, encounter costs,
+payer coverage, procedure utilisation, and patient return visits.
+The organisation has provided historical healthcare datasets containing encounter records, patient
+information, procedure records, payer details, organisation information, and a data dictionary.
+As an intern at AnalystLab Africa, you have been assigned to a healthcare intelligence project team.
+Your responsibility is to use the skills acquired in your learning track to investigate a defined business
+problem and develop a solution that supports evidence-based operational decision-making.
+You are expected to go beyond producing charts, writing code, or building an application. Your work
+must demonstrate sound reasoning, appropriate methodology, validation, professional documentation,
+and an understanding of the limitations of the available data.
+
+=== PAGE 2 ===
+2. Project Objectives
+By the end of this assignment, you should be able to:
+1. Translate a healthcare operations challenge into a clearly defined problem.
+2. Assess the suitability, structure, quality, and limitations of healthcare datasets.
+3. Apply the appropriate analytical or technical methods for your learning track.
+4. Validate your findings or solution using suitable evidence.
+5. Communicate results and recommendations professionally.
+6. Apply responsible data handling, privacy, and documentation practices.
+7. Produce a project deliverable that can be reviewed, tested, and understood by another
+professional.
+3. Dataset Resources
+Use the healthcare dataset pack provided by AnalystLab Africa.
+Resource Primary purpose
+Analyse encounter volumes, encounter classes, duration, costs,
+encounters.csv
+and payer coverage
+Support appropriate patient demographic and patient-level
+patients.csv
+analysis
+procedures.csv Analyse procedure frequency, costs, and utilisation
+payers.csv Support payer-related analysis
+organizations.csv Understand the organisation represented in the data
+data_dictionary.csv Understand field definitions and intended relationships
+hospital_analytics_questions.sql Reference SQL questions for healthcare analysis
+create_hospital_db.sql Optional SQL database setup resource
+Important: The SQL question file is a reference resource, not a substitute for your own analysis. You
+are expected to understand your selected problem and explain your approach.
+Before beginning, inspect the datasets and confirm that the fields required for your chosen analysis are
+available. Do not assume that every field described in the data dictionary is present in every CSV file.
+4. General Instructions for All Interns
+Every intern must complete the following foundational activities before beginning the track-specific
+tasks.
+
+=== PAGE 3 ===
+Task 1: Understand the business problem
+Write a brief explanation of the healthcare organisation's challenge and identify the operational
+question your work will address.
+Your explanation must include:
+• The problem you intend to investigate or solve.
+• Why the problem matters to healthcare operations.
+• The intended user of your final deliverable.
+• The decision your findings or solution could support.
+• The limitations of the available evidence.
+Task 2: Inspect the datasets
+Review the relevant datasets and document:
+• The tables and fields you intend to use.
+• The number of records and columns in each selected file.
+• Missing values, duplicate records, inconsistent data types, and date issues.
+• The relationships between relevant tables.
+• Any limitations that could affect the validity of your work.
+Do not automatically remove duplicates or replace missing values without first understanding their
+meaning and potential effect on your analysis.
+Task 3: Define success criteria
+Identify at least three measurable criteria that will help determine whether your work is successful.
+Examples include:
+• Analytical calculations reconcile with an independent check.
+• A model outperforms an appropriate baseline on a defined evaluation metric.
+• An AI application provides supported answers to a test set of questions.
+• A project plan contains clear dependencies, milestones, owners, and acceptance criteria.
+Select criteria that are appropriate to your track.
+Task 4: Maintain professional standards
+• Use clear file names and an organised project folder.
+• Document assumptions and important decisions.
+• Attribute external sources, code, and other materials used.
+• Include evidence that your work has been tested or validated.
+• Do not expose patient names, addresses, or other unnecessary identifying information in
+reports, screenshots, dashboards, or public repositories.
+• Do not make clinical claims or treatment recommendations unsupported by the supplied data.
+
+=== PAGE 4 ===
+Database safety: The provided SQL setup script begins by dropping and recreating a database named
+hospital_db. Inspect the script before running it and use only an isolated practice environment. Never
+execute it against a production or existing database containing important information.
+5. TRACK-SPECIFIC ASSIGNMENTS
+TRACK A: DATA ANALYTICS
+Assignment Title
+Healthcare Operations & Financial Intelligence Dashboard
+Objective
+Develop an interactive healthcare operations dashboard that helps decision-makers understand
+encounter patterns, costs, payer coverage, and procedure utilisation.
+Task 1: Prepare and model the data
+1. Import the relevant healthcare datasets into Power BI or an appropriate analytical tool.
+2. Assess data quality and document the issues discovered.
+3. Identify the relationships between encounters, patients, procedures, and payers.
+4. Create an appropriate data model where the available keys and data support it.
+5. Document any transformations performed and explain why they were necessary.
+Task 2: Analyse healthcare operations
+Investigate at least four of the following questions:
+1. How have encounter volumes changed over time?
+2. Which encounter classes account for the largest proportion of recorded encounters?
+3. What proportion of encounters lasted more than 24 hours, where valid start and end timestamps
+are available?
+4. How do total claim costs vary across encounter classes?
+5. How much payer coverage is recorded, and how many encounters have zero recorded payer
+coverage?
+6. Which procedures occur most frequently?
+7. Which procedures have the highest average base cost, considering both frequency and the
+limitations of the data?
+8. How do average total claim costs vary by payer?
+For each question, state the relevant metric, calculation method, and business interpretation.
+Task 3: Build the dashboard
+Your dashboard must contain:
+• An overview page with key operational indicators.
+
+=== PAGE 5 ===
+• A trend analysis of encounter volumes.
+• An encounter-class comparison.
+• A cost and payer-coverage analysis.
+• A procedure-utilisation analysis.
+• Appropriate filters and interactive visual elements.
+Include at least five meaningful KPIs, provided the necessary data is available. Document the
+definitions of your KPIs so that another analyst can reproduce the calculations.
+Task 4: Validate the dashboard
+• Independently verify at least three important calculations.
+• Check whether totals change correctly when filters are applied.
+• Investigate discrepancies between the dashboard and the source data.
+• Document any metric that could be misleading because of missing information or ambiguous
+definitions.
+Task 5: Produce business recommendations
+Write at least three evidence-based recommendations.
+For each recommendation, state the finding that supports it, the proposed action, the intended benefit,
+and any limitation or additional information required.
+Required Deliverables
+1. Power BI .pbix file or equivalent working dashboard.
+2. Data-quality assessment.
+3. KPI definition sheet.
+4. Dashboard screenshots.
+5. Validation evidence.
+6. Executive summary containing key findings and recommendations.
+Recommended tools: Power BI, Power Query, DAX, Excel, and SQL.
+TRACK B: DATA SCIENCE
+Assignment Title
+Healthcare Operations: Statistical Investigation & Insight Discovery
+Objective
+Investigate a healthcare operations problem using exploratory data analysis, statistical reasoning, and
+evidence-based interpretation.
+
+=== PAGE 6 ===
+Task 1: Define the research question
+Select one primary question supported by the available data.
+Possible questions include:
+• How do encounter costs vary across encounter classes?
+• Are encounter durations associated with differences in recorded claim costs?
+• How do encounter volumes change across years or quarters?
+• Do procedure costs differ substantially across frequently performed procedures?
+• What characteristics are associated with recorded encounter costs, subject to data availability
+and appropriate interpretation?
+State your research question, its relevance, and the variables required to investigate it.
+Task 2: Conduct exploratory data analysis
+1. Inspect the relevant dataset or linked datasets.
+2. Examine distributions, missingness, potential outliers, and data consistency.
+3. Investigate relevant relationships between variables.
+4. Create appropriate visualisations.
+5. Explain what the results show and what they cannot establish.
+Task 3: Form and test hypotheses
+Develop at least two hypotheses relevant to your chosen question.
+For each hypothesis:
+• State the null and alternative hypotheses where a formal statistical test is appropriate.
+• Identify the variables and analysis method.
+• Explain the assumptions of the chosen method.
+• Conduct the analysis.
+• Interpret the results in plain language.
+• Explain the practical significance and limitations of the findings.
+Do not use a statistical test simply because it is available. Choose a method that fits the question, data
+type, and assumptions.
+Task 4: Investigate limitations
+Explain how missing values, unequal group sizes, repeated records, potential confounding factors, or
+limited data coverage could affect your conclusions.
+Distinguish between association and causation.
+Task 5: Produce an analytical report
+Your report must include:
+
+=== PAGE 7 ===
+• Research question and objectives.
+• Data preparation approach.
+• Exploratory findings.
+• Hypotheses and statistical methods.
+• Results and interpretation.
+• Limitations and recommendations.
+Required Deliverables
+1. Reproducible Python notebook.
+2. Data-quality summary.
+3. At least five relevant visualisations.
+4. Statistical analysis report.
+5. Findings and recommendations.
+6. Instructions for reproducing the analysis.
+Recommended tools: Python, Pandas, NumPy, Matplotlib, Seaborn, SciPy, and Jupyter Notebook.
+TRACK C: MACHINE LEARNING ENGINEERING
+Assignment Title
+Healthcare Operations: Predictive Model Development & Evaluation
+Objective
+Design, train, evaluate, and document one predictive machine learning solution that addresses a
+feasible healthcare operations question.
+This is an engineering assignment. A successful submission must demonstrate more than training a
+model: it must show that the model is evaluated appropriately, reproducible, and suitable for its stated
+purpose.
+Task 1: Select a prediction problem
+Choose one feasible target based on the available fields and sufficient valid records.
+Potential directions include:
+• Predicting encounter duration or whether an encounter exceeds a defined duration threshold.
+• Estimating encounter costs using available encounter information.
+• Predicting a clearly defined repeat-encounter outcome, if the data supports reliable construction
+of the target.
+You must justify the selected problem and confirm that the target can be constructed from the supplied
+data.
+
+=== PAGE 8 ===
+Do not assume that the available data supports every prediction problem.
+Task 2: Define the target and features
+Document:
+• The target variable and how it is constructed.
+• The intended prediction point.
+• The features that would be available at that point.
+• Features excluded because they would introduce leakage or are unavailable at prediction time.
+• Missing-data handling and feature transformations.
+• Potential limitations in the target definition.
+For repeat-encounter prediction, define the time window and observation period carefully. Do not treat
+every subsequent encounter as a clinical readmission.
+Task 3: Establish a baseline
+1. Create a simple baseline model.
+2. Select appropriate evaluation metrics.
+3. Split the data using a method suited to the problem.
+4. Where time-based prediction is intended, consider a chronological split.
+5. Explain why the selected validation strategy is appropriate.
+Task 4: Train and compare models
+Train at least two suitable model approaches, including the baseline, and compare their results.
+For classification, consider suitable metrics such as precision, recall, F1-score, and ROC-AUC where
+appropriate.
+For regression, consider MAE, RMSE, and an appropriate baseline comparison.
+Explain why the selected metrics matter for the use case.
+Task 5: Test and package the solution
+• Build a reproducible training workflow.
+• Evaluate model errors and limitations.
+• Check for data leakage and inappropriate use of features.
+• Include basic input validation and tests.
+• Document how the model can be loaded and used for inference.
+• Explain what further monitoring would be needed before operational deployment.
+Required Deliverables
+1. Source code and reproducible notebook or scripts.
+2. Data preparation and feature engineering documentation.
+3. Baseline and model comparison report.
+
+=== PAGE 9 ===
+4. Evaluation metrics and error analysis.
+5. Saved model where appropriate.
+6. Inference script or working prototype.
+7. Tests and README.
+Recommended tools: Python, Pandas, Scikit-learn, Matplotlib, Git, and an appropriate model-
+persistence method.
+Responsible-use restriction: This task concerns healthcare operations. Do not present the model as a
+diagnostic or treatment system, and do not claim clinical validity based solely on these datasets.
+TRACK D: GENERATIVE AI
+Assignment Title
+Healthcare Operations Knowledge Assistant
+Objective
+Build a prototype AI assistant that helps users understand approved healthcare operational metrics and
+dataset definitions while reducing unsupported or misleading responses.
+The assistant is intended for operational information and analytics support, not clinical advice.
+Task 1: Define the use case
+Identify the intended users and at least five operational questions the assistant should answer.
+Examples:
+• What does the TOTAL_CLAIM_COST field represent?
+• Which encounter classes are present in the dataset?
+• What is the difference between base encounter cost and total claim cost?
+• How is encounter duration calculated?
+• What information is needed to analyse payer coverage?
+Include questions that the assistant should not answer because the supplied sources do not provide
+sufficient evidence.
+Task 2: Prepare the knowledge sources
+1. Review data_dictionary.csv.
+2. Identify the approved documentation and validated findings that can support responses.
+3. Prepare the knowledge sources in a structured format.
+4. Document gaps in the available information.
+5. Avoid inventing hospital policies, clinical guidelines, or operational rules that are not supplied.
+
+=== PAGE 10 ===
+Task 3: Build the application
+Create a simple working application that:
+• Accepts user questions.
+• Retrieves or uses approved information.
+• Produces understandable responses.
+• Provides source references or explanations of the evidence where feasible.
+• Handles unsupported questions appropriately.
+• Displays errors clearly without exposing credentials or sensitive information.
+For questions involving numerical results, use validated calculations or a controlled query layer rather
+than asking the language model to invent figures.
+Task 4: Evaluate the assistant
+Create a test set of at least 20 questions covering:
+• Correct, directly supported questions.
+• Questions requiring numerical calculations.
+• Ambiguous questions.
+• Questions with insufficient supporting information.
+• Incorrect assumptions.
+• Requests for unsupported clinical advice.
+• Attempts to obtain unnecessary identifying patient information.
+Record the expected behaviour, actual response, whether the response was supported, and any
+corrective action required.
+Task 5: Improve reliability
+Document how you addressed inaccurate answers, unsupported claims, privacy risks, and failure cases.
+Required Deliverables
+1. Working AI assistant prototype.
+2. Source code and setup instructions.
+3. Description of the knowledge sources and workflow.
+4. Test questions and expected outcomes.
+5. Evaluation report with observed failures.
+6. Privacy and responsible-AI risk assessment.
+7. Demonstration video or screenshots.
+Recommended tools: Python, an approved LLM API, Streamlit or Gradio, and a retrieval or
+structured-query approach appropriate to the use case.
+Security requirement: Never commit API keys or credentials to source control. Do not send
+identifiable patient data to an external model unless the data handling has been explicitly authorised
+and the service is approved for that use.
+
+=== PAGE 11 ===
+TRACK E: PROJECT MANAGEMENT
+Assignment Title
+Healthcare Intelligence Project: Planning, Governance & Delivery Control
+Objective
+Prepare an execution-ready project management plan for delivering a healthcare intelligence solution
+using the supplied datasets.
+Your plan must account for the different technical workstreams, project dependencies, quality
+requirements, privacy risks, and delivery constraints.
+Task 1: Develop the project charter
+Prepare a project charter containing:
+• Project background and business need.
+• Project objectives.
+• Scope and exclusions.
+• Key deliverables.
+• Stakeholders and responsibilities.
+• Assumptions and constraints.
+• Acceptance criteria.
+• Major project risks.
+Task 2: Create the work breakdown structure
+Develop a structured work breakdown structure covering the major phases, activities, and deliverables
+required for a healthcare intelligence project.
+Include activities for data assessment, analysis or model development, solution testing, documentation,
+and presentation.
+Task 3: Develop the project schedule
+Prepare a Gantt chart with:
+• Activities and milestones.
+• Estimated durations.
+• Dependencies.
+• Planned start and finish dates.
+• Responsible roles.
+• Critical-path analysis where the scheduling method supports it.
+Clearly identify assumptions used to estimate durations and dependencies.
+
+=== PAGE 12 ===
+Task 4: Prepare the resource and budget plan
+Estimate the resources required to deliver the project.
+Include appropriate categories such as labour, software, hosting, testing, documentation, and
+contingency where relevant.
+Label figures as estimates and state the assumptions behind them. Do not present hypothetical costs as
+actual client expenditure.
+Task 5: Develop a risk and quality management plan
+Prepare a risk register containing at least eight project risks.
+Consider:
+• Poor data quality.
+• Unclear metric definitions.
+• Inconsistent source fields.
+• Privacy and unauthorised data access.
+• Delayed deliverables.
+• Model or application failures.
+• Inaccurate AI-generated responses.
+• Inadequate testing or validation.
+For each risk, document its likelihood, impact, mitigation, owner, and status.
+Also define quality gates and acceptance criteria for each major deliverable.
+Task 6: Simulate project progress
+Create a hypothetical progress update in which at least two activities are delayed and one change
+request is raised.
+Explain the impact on dependencies, schedule, cost, scope, and quality. Recommend corrective actions
+and update the relevant project records.
+Clearly label the scenario as a simulation, not an actual client event.
+Required Deliverables
+1. Project charter.
+2. Work breakdown structure.
+3. Gantt chart and dependency analysis.
+4. Resource and estimated budget plan.
+5. Risk register.
+6. Quality and acceptance plan.
+7. Simulated status report and change log.
+8. Final project delivery and handover checklist.
+
+=== PAGE 13 ===
+Recommended tools: Microsoft Project, Excel, Jira, Trello, or an equivalent project management tool.
+ASSESSMENT CRITERIA
+Section Marks
+Business problem understanding 10
+Data quality, assumptions, and evidence 15
+Technical quality and correctness 25
+Testing, validation, and reliability 20
+Business interpretation and recommendations 10
+Documentation and reproducibility 10
+Professional communication 10
+Total 100 Marks
+Professional Development Requirement
+As part of building your professional portfolio:
+• Update your GitHub repository with your Week 3 project.
+• Publish a LinkedIn post describing your project
+• Publish an X (Twitter) post summarizing your project.
+• Tag AnalystLab Africa on LinkedIn.
+• Tag @analystlabafric on X.
+• Include the hashtag #AnalystLabAfrica on both platforms.
+Professional Branding Reminder
+AnalystLab Africa encourages every intern to document their learning journey professionally on LinkedIn
+and X. Consistently sharing your work helps build your portfolio and increases your visibility to recruiters
+and employers.
+
